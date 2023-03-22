@@ -16,196 +16,196 @@ def check(awnser , user_input):
 
 
 #Ask the user for their name to store it as a variable for later on
-name = input ("What is your name?")
+name = input ("What is your name?\n\n")
 #Asking the user if they want to do the quiz
-WantToPlay = input("Hi {} are you ready to start this general knowledge quiz!".format(name)).lower()
+WantToPlay = input("Hi {} are you ready to start this general knowledge quiz!\n\n".format(name)).lower().strip()
 
 
 #If the user says no to playing the quiz I will deduct one point from their points variable I created
 if WantToPlay == "no":
     points -=1 
     #Then I will tell them the reason why I have deducted one point of their points variable.
-    print("Scince you didnt want to play i will automatically minus one of your points:(")
-    print("Ok lets get started!")
+    print("\n\nScince you didnt want to play i will automatically minus one of your points:(")
+    print("\nOk lets get started!")
     #If the user has said "yes" this means they want to start the quiz so I dont deduct 1 from the points variable
 elif WantToPlay =="yes":
-    print("Ok lets get started!")
+    print("\n\nOk lets get started!")
     #Any other input here is invalid. Or is just a joke, so we tell the user that they have entered somthing else and deduct one score of the points variable.
 else: 
-    print("Please enter 'yes' or 'no' next time!")
-    print("I am deducting 1 point for not awnsering!")
+    print("\n\nPlease enter 'yes' or 'no' next time!")
+    print("\nI am deducting 1 point for not awnsering!")
     points -=1
 
 
 #This is Question 1
 #The options here are the correct awnsers.
-options = ["rome".lower() , "b".lower()]
+options = ["rome".lower().strip() , "b".lower().strip()]
 #We ask the user the question and store it in a "Question" variable
-Question = input("What city is known as the 'ETERNAL CITY'? \n A) Barcelona \n B) Rome \n C) Dubai \n D) Madrid\n>>").lower()
+Question = input("What city is known as the 'ETERNAL CITY'? \n A) Barcelona \n B) Rome \n C) Dubai \n D) Madrid\n\n>>").lower().strip()
 
 #Run the function we created and check if the options is the same as the variable inputted for "Question"
 if check(options, Question):
     #If it is then tell the user they got the question right and add one to the "points" variable
-    print("You got the right awnser!")
+    print("You got the right awnser!\n\n")
     points += 1
 else:
     #If the user has not entered anything in the options variable they have the awnser wrong so we dont add score 
     #And we tell them that they have the wrong awnser
-    print("Wrong awnser!")
+    print("Wrong awnser!\n\n")
 
 
 #This is Question 2
 #The options here are the correct awnsers.
-options = [ "sylvester stallone".lower() , "b".lower()]
+options = [ "sylvester stallone".lower().strip() , "b".lower().strip()]
 #We ask the user the question and store it in a "Question" variable
-Question = input ("Which actor played rocky? \n A) Tony Burton \n B) Sylvester Stallone\n C) Harrison Ford\n D) Jason Statham\n>> ").lower()
+Question = input ("Which actor played rocky? \n A) Tony Burton \n B) Sylvester Stallone\n C) Harrison Ford\n D) Jason Statham\n\n>> ").lower().strip()
 
 #Run the function we created and check if the options is the same as the variable inputted for "Question"
 if check(options, Question):
     #If it is then tell the user they got the question right and add one to the "points" variable
-    print("You got the right awnser!")
+    print("You got the right awnser!\n\n")
     points += 1
 else:
     #If the user has not entered anything in the options variable they have the awnser wrong so we dont add score 
     #And we tell them that they have the wrong awnser
-    print("You got the wrong awnser")
+    print("You got the wrong awnser\n\n")
 
 
 #This is Question 3
 #The options here are the correct awnsers.
-options = [ "grand canyon".lower() , "c".lower()]
+options = [ "grand canyon".lower().strip() , "c".lower().strip()]
 #We ask the user the question and store it in a "Question" variable
-Question = input("What is the largest canyon in the world? \nA) Verdon Gorge\n B) Kings Canyon\n C) Grand Canyon\n D) Biggsettien Canyon\n>>").lower()
+Question = input("What is the largest canyon in the world? \nA) Verdon Gorge\n B) Kings Canyon\n C) Grand Canyon\n D) Biggsettien Canyon\n\n>>").lower().strip()
 
 #Run the function we created and check if the options is the same as the variable inputted for "Question"
 if check(options, Question):
     #If it is then tell the user they got the question right and add one to the "points" variable
-    print("You got the right awnser!")
+    print("You got the right awnser!\n\n")
     points += 1
 else:
     #If the user has not entered anything in the options variable they have the awnser wrong so we dont add score 
     #And we tell them that they have the wrong awnser
-    print("Wrong awnser!")
+    print("Wrong awnser!\n\n")
 
 
 #This is Question 4
 #The options here are the correct awnsers.
-options = ["a".lower() , "louvre".lower() , "le lourve".lower()]
+options = ["a".lower().strip() , "louvre".lower().strip() , "le lourve".lower().strip()]
 #We ask the user the question and store it in a "Question" variable
-Question = input ("In which museum can you find Leonardo Da Vinci’s Mona Lisa? \nA)Le Louvre  \nB)Uffizi Museum  \nC)British Museum  \nD)Metropolitan Museum of Art\n>>").lower()
+Question = input ("In which museum can you find Leonardo Da Vinci’s Mona Lisa? \nA)Le Louvre  \nB)Uffizi Museum  \nC)British Museum  \nD)Metropolitan Museum of Art\n\n>>").lower().strip()
 
 #Run the function we created and check if the options is the same as the variable inputted for "Question"
 if check(options, Question):
     #If it is then tell the user they got the question right and add one to the "points" variable
-    print("You got the right awnser!")
+    print("You got the right awnser!\n\n")
     points += 1
 else:
     #If the user has not entered anything in the options variable they have the awnser wrong so we dont add score 
     #And we tell them that they have the wrong awnser
-    print("You got the wrong awnser")
+    print("You got the wrong awnser\n\n")
 
 
 #This is Question 5
 #The options here are the correct awnsers.
-options = ["louis xiv".lower() , "d".lower()]
+options = ["louis xiv".lower().strip() , "d".lower().strip()]
 #We ask the user the question and store it in a "Question" variable
-Question = input("Which French king was nicknamed the “Sun King”? \nA)Louis XVI \nB)Charlemagne \nC)Francis I \nD)Louis XIV \n>>").lower()
+Question = input("Which French king was nicknamed the “Sun King”? \nA)Louis XVI \nB)Charlemagne \nC)Francis I \nD)Louis XIV \n\n>>").lower().strip()
 
 #Run the function we created and check if the options is the same as the variable inputted for "Question"
 if check(options, Question):
     #If it is then tell the user they got the question right and add one to the "points" variable
-    print("You got the right awnser!")
+    print("You got the right awnser!\n\n")
     points += 1
 else:
     #If the user has not entered anything in the options variable they have the awnser wrong so we dont add score 
     #And we tell them that they have the wrong awnser
-    print("Wrong awnser!")
+    print("Wrong awnser!\n\n")
 
 
 #This is Question 6
 #The options here are the correct awnsers.
-options = ["peyo".lower() , "b".lower()]
+options = ["peyo".lower().strip() , "b".lower().strip()]
 #We ask the user the question and store it in a "Question" variable
-Question = input ("Which artist and author made the Smurfs comic strips? \nA)Hergé  \nB)Peyo  \nC)Morris \nD)Edgar P. Jacobs \n>>").lower()
+Question = input ("Which artist and author made the Smurfs comic strips? \nA)Hergé  \nB)Peyo  \nC)Morris \nD)Edgar P. Jacobs \n\n>>").lower().strip()
 
 #Run the function we created and check if the options is the same as the variable inputted for "Question"
 if check(options, Question):
     #If it is then tell the user they got the question right and add one to the "points" variable
-    print("You got the right awnser!")
+    print("You got the right awnser!\n\n")
     points += 1
 else:
-    print("You got the wrong awnser")
+    print("You got the wrong awnser\n\n")
 
 
 #This is Question 7
 #The options here are the correct awnsers.
-options = ["d".lower() , "6".lower()]
+options = ["d".lower().strip() , "6".lower().strip()]
 #We ask the user the question and store it in a "Question" variable
-Question = input("How many wives had Henry VIII? \nA)1 \nB)3 \nC)4 \nD)6\n>> ").lower()
+Question = input("How many wives had Henry VIII? \nA)1 \nB)3 \nC)4 \nD)6\n\n>> ").lower().strip()
 
 #Run the function we created and check if the options is the same as the variable inputted for "Question"
 if check(options, Question):
     #If it is then tell the user they got the question right and add one to the "points" variable
-    print("You got the right awnser!")
+    print("You got the right awnser!\n\n")
     points += 1
 else:
     #If the user has not entered anything in the options variable they have the awnser wrong so we dont add score 
     #And we tell them that they have the wrong awnser
-    print("Wrong awnser!")
+    print("Wrong awnser!\n\n")
 
 
 #This is Question 8
 #The options here are the correct awnsers.
-options = ["1605".lower() , "b".lower()]
+options = ["1605".lower().strip() , "b".lower().strip()]
 #We ask the user the question and store it in a "Question" variable
-Question = input ("When were Guy Fawkes and The Gunpowder Plot discovered? \nA)1505 \nB)1605 \nC)1705 \nD)1805 \n>> ").lower() 
+Question = input ("When were Guy Fawkes and The Gunpowder Plot discovered? \nA)1505 \nB)1605 \nC)1705 \nD)1805 \n\n>> ").lower().strip()
 
 #Run the function we created and check if the options is the same as the variable inputted for "Question"
 if check(options, Question):
     #If it is then tell the user they got the question right and add one to the "points" variable
-    print("You got the right awnser!")
+    print("You got the right awnser!\n\n")
     points += 1
 else:
     #If the user has not entered anything in the options variable they have the awnser wrong so we dont add score 
     #And we tell them that they have the wrong awnser
-    print("You got the wrong awnser")
+    print("You got the wrong awnser\n\n")
 
 
 #This is Question 9
 #The options here are the correct awnsers.
-options = ["b".lower() , "jfk".lower() , "jhon f kennedy".lower()]
+options = ["b".lower().strip() , "jfk".lower().strip() , "jhon f kennedy".lower().strip()]
 #We ask the user the question and store it in a "Question" variable
-Question = input("Who was assassinated on the 22nd of November 1963? \nA)Martin Luther King \nB)JFK \nC)MK Gandhi \nD)Malcolm X \n>>").lower()
+Question = input("Who was assassinated on the 22nd of November 1963? \nA)Martin Luther King \nB)JFK \nC)MK Gandhi \nD)Malcolm X \n\n>>").lower().strip()
 
 #Run the function we created and check if the options is the same as the variable inputted for "Question"
 if check(options, Question):
     #If it is then tell the user they got the question right and add one to the "points" variable
-    print("You got the right awnser!")
+    print("You got the right awnser!\n\n")
     points += 1
 else:
     #If the user has not entered anything in the options variable they have the awnser wrong so we dont add score 
     #And we tell them that they have the wrong awnser
-    print("Wrong awnser!")
+    print("Wrong awnser!\n\n")
 
 
 #This is Question 10
 #The options here are the correct awnsers.
-options = ["mathmatician".lower() , "d".lower()]
+options = ["mathmatician".lower().strip() , "d".lower().strip()]
 #We ask the user the question and store it in a "Question" variable
-Question = input ("What was Euclid? \nA) philosopher \nB) poet \nC)painter \nD)mathematician\n>> ").lower()
+Question = input ("What was Euclid? \nA) philosopher \nB) poet \nC)painter \nD)mathematician\n\n>> ").lower().strip()
 
 #Run the function we created and check if the options is the same as the variable inputted for "Question"
 if check(options, Question):
     #If it is then tell the user they got the question right and add one to the "points" variable
-    print("You got the right awnser!")
+    print("You got the right awnser!\n\n")
     points += 1
 else:
     #If the user has not entered anything in the options variable they have the awnser wrong so we dont add score 
     #And we tell them that they have the wrong awnser
-    print("You got the wrong awnser")
+    print("You got the wrong awnser\n\n")
 
 #Telling the user how many they got right
-print("Congrats you got {} right!".format(points))
+print("Congrats you got {} right!\n\n".format(points))
 
 #If the user got less then 5 of the questions correct we tell them they got a rating of D
 if int(points < 5):
@@ -225,3 +225,4 @@ elif int(points == 9):
 #Else if the user has got 10 points we tell them they got a perfect score or got all of them right
 elif int(points == 10):
     print("PERFECT SCORE!!!! WELL DONE")
+
